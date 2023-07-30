@@ -30,8 +30,6 @@ This project is open to future enhancements and contributions. Feel free to expl
 ## Contributing
 Contributions to the Music Player App are welcome. If you encounter any issues or have ideas for improvements, please submit a pull request or open an issue in the repository.
 
-## License
-This project is licensed under the [MIT License](link-to-license-file).
 
 ---
 Feel free to reach out to me for any questions or clarifications related to this project.
