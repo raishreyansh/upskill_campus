@@ -15,7 +15,36 @@ Updated the MySQL database credentials in the DatabaseManager class to match you
 Created the necessary tables (Playlist Table and Song Table) with the properties mentioned in the music_player_db.sql script.
 Placed your .mp3 files in a folder of your choice. Update the directory location in the Song class (src/com/example/musicplayer/Song.java) to point to the folder containing your .mp3 files.
 
+##**Creating the Required Tables**
+Before running the application, you need to create three tables in the MySQL database to store playlist and track information. Use the following SQL queries to create the tables:
 
+**playlist_track Table:**
+CREATE TABLE playlist_track (
+  PlaylistTrackId INT NOT NULL AUTO_INCREMENT,
+  PlaylistId INT NOT NULL,
+  TrackId INT NOT NULL,
+  PRIMARY KEY (PlaylistTrackId),
+  FOREIGN KEY (PlaylistId) REFERENCES playlists(PlaylistId),
+  FOREIGN KEY (TrackId) REFERENCES track_list(id)
+);
+
+**playlists Table:**
+CREATE TABLE playlists (
+  PlaylistId INT NOT NULL AUTO_INCREMENT,
+  Name VARCHAR(100) NOT NULL,
+  PRIMARY KEY (PlaylistId)
+);
+
+**track_list Table:**
+CREATE TABLE track_list (
+  id INT NOT NULL AUTO_INCREMENT,
+  Title VARCHAR(255) NOT NULL,
+  Artist VARCHAR(255),
+  Album VARCHAR(255),
+  Duration INT,
+  file_path VARCHAR(255) NOT NULL UNIQUE,
+  PRIMARY KEY (id)
+);
 
 The Music Player App's graphical user interface (GUI) will appear, allowing you to interact with the application and enjoy music playback and playlist management.
 
