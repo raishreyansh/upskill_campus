@@ -8,11 +8,12 @@ import org.jaudiotagger.audio.AudioFileIO;
 import org.jaudiotagger.tag.FieldKey;
 
 public class DatabaseManager {
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/project";
+    //your own database details
+    private static final String DB_URL = "****";
     private static final String DB_USERNAME = "****";
     private static final String DB_PASSWORD = "****";
 
-    private static final String MUSIC_DIRECTORY = "C:\\Users\\raish\\Music\\Ariana";
+    private static final String MUSIC_DIRECTORY = "/* any music directory with mp3 files */";
 
     private Connection connection;
     public Connection getConnection() {
