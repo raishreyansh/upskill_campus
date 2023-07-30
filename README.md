@@ -9,6 +9,12 @@ To run the Music Player App, ensure you have the following requirements installe
 - Java Development Kit (JDK) 8 or higher
 - MySQL Server (with necessary privileges and connection information)
 
+Note: Before running the app, ensure you have:
+
+Updated the MySQL database credentials in the DatabaseManager class to match your own MySQL server setup.
+Created the necessary tables (Playlist Table and Song Table) with the properties mentioned in the music_player_db.sql script.
+Placed your .mp3 files in a folder of your choice. Update the directory location in the Song class (src/com/example/musicplayer/Song.java) to point to the folder containing your .mp3 files.
+
 
 
 The Music Player App's graphical user interface (GUI) will appear, allowing you to interact with the application and enjoy music playback and playlist management.
