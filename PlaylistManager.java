@@ -11,8 +11,8 @@ public class PlaylistManager {
     private Map<String, Playlist> playlists;
     private int maxPlaylistId; // Current maximum playlist ID
     private static final String DB_URL = "jdbc:mysql://localhost:3306/project";
-    private static final String DB_USERNAME = "root";
-    private static final String DB_PASSWORD = "0247";
+    private static final String DB_USERNAME = "****";
+    private static final String DB_PASSWORD = "****";
     private Connection connection;
 
     private DatabaseManager databaseManager;
