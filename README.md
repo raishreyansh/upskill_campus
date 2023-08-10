@@ -59,6 +59,8 @@ This project is open to future enhancements and contributions. Feel free to expl
 ## Contributing
 Contributions to the Music Player App are welcome. If you encounter any issues or have ideas for improvements, please submit a pull request or open an issue in the repository.
 
+## Screenshot
+![code_snippet](https://github.com/raishreyansh/upskill_campus/assets/89587497/ad7562d1-93f5-437e-805f-4371a37aa0c5)
 
 ---
 Feel free to reach out to me for any questions or clarifications related to this project.
